@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Comment Box </title>
+<style>
+*{
+marging:0;
+padding: 0;
+}
+body{ 
+background: #8A2BE2;
+display: flex
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.container{
+text-align: center;
+justify-content: center;
+align-items: center;
+min-height: 600px;
+width: 600px;
+margin-top: 10px;
+background: #c1a9ff;
+border: 2px solid #bea;
+border-radius: 10px;
+transition: 10s;
+overflow: hidden;
+}
+h2{
+font-size: 40px;
+font-family: Bahnschrift Light Condensed;
+user-select: none;
+text-transform: uppercase;
+}
+.form{
+margin: 30px;
+box-sizing: border-box;
+}
+.user input{
+width: 400px;
+height: 30px;
+margin-top: 5%;
+border: none;
+background: transparent;
+border-bottom: 3px solid #fff;
+font-size: 20px;
+font-family: Bahnschrift Light Condensed;
+outline: none;
+}
+.username input{
+width: 400px;
+height: 30px;
+margin-top: 3%;
+border: none;
+background: transparent;
+border-bottom: 3px solid #fff;
+font-size: 20px;
+font-family: Bahnschrift Light Condensed;
+outline: none;
+}
+.user input::placeholder{
+color:#222;
+}
+.username input::placeholder{
+color:#222;
+}
+textarea{
+width: 400px;
+height: 200px;
+background: linear-gradient(180deg,#5bea,#ffc0);
+box-shadow: 0 0 20px 4px #303030;
+resize: none;
+margin-top: 3%;
+padding-top: 10px;
+text-align: center;
+font-size: 18px;
+font-family: Bahnschrift Light Condensed;
+}
+textarea::placeholder{
+color: #222;
+}
+.sub{
+margin-top: 15%;
+position: relative;
+}
+.sub input{
+font-size: 20px;
+font-family: Bahnschrift Light Condensed;
+width: 400px;
+height: 50px;
+border-radius: 50px;
+background: #c1a9ff;
+border:3px solid #fff;
+color: #f2f2f2;
+}
+.sub input[type='submit']:active{
+border-color: #755bea;
+}
+::-webkit-scrollbar{
+width: 25px;
+}
+::-webkit-scrollbar-track{
+border:7px solid #EE82EE;
+box-shadow: inset 0 0 2.5px 2px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb{
+background:linear-gradient(to bottom, #99ccff 0%, #ff99cc 100%);
+border-radius: 3px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<form action="">
+<div class="form">
+<h2><center> Comment Box </center></h2>
+<div class="user">
+<input type="email" placeholder="Enter Your Email">
+</div>
+<div class="username">
+<input type="text" placeholder="Enter Username">
+</div>
+<textarea placeholder="Enter Your Message"></textarea>
+</div>
+<div class="sub">
+<input type="submit" value="Submit">
+</div>
+</div>
+</form>
+</div>
+</body>
+</html>
